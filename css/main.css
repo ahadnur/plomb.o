@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Days One', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+ul > li{
+    list-style: none;
+}
+
+body{
+    max-height: 100vh;
+    max-width: 100%;
+    background-color: #79FFFE;
+}
+
+.active{
+    display: block;
+}
+
+.init__warning{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.init__warning .contents{
+    margin-top: 50px;
+}
+.init__warning .warning{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.7);
+}
+
+.init__warning .warning .w__content{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 70px 50px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+}
+
+.init__warning .warning .w__content .w__text{
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.init__warning .warning .w__content .cta__btn #confirm{
+    border: none;
+    outline: none;
+    font-size: 36px;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
