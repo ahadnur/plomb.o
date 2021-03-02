@@ -20,11 +20,7 @@ body{
     overflow: hidden;
 }
 
-section .contents{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-}
+
 section .contents button{
     background: none;
     border: none;
@@ -44,6 +40,10 @@ section .contents button{
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.init__warning .contents{
+    margin-top: 50px;
 }
 
 .init__warning .warning{
@@ -88,7 +88,7 @@ section .contents button{
     z-index: -1;
 }
 
-section .btns button{
+.init__warning .btns button{
     background: none;
     border: none;
     outline: none;
@@ -96,20 +96,24 @@ section .btns button{
     padding: 0;
     cursor: pointer;
 }
-section .btns button:not(:last-child){
+.init__warning .btns button:not(:last-child){
     margin-right: 50px;
 }
 
+
+/* Homepage section */
 .homepage{
-    max-height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
 }
 
 .homepage .contents{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .homepage .contents .main__img{
@@ -119,5 +123,74 @@ section .btns button:not(:last-child){
 .homepage .btns{
     position: absolute;
     left: 60px;
-    top: 80vh;
+    bottom: 90px;
+}
+
+.homepage .btns button{
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.homepage .btns button:not(:last-child){
+    margin-right: 50px;
+}
+
+
+/* Add Player Section */
+
+.add__player{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 60px;
+}
+
+.add__player .contents{
+    text-align: center;
+}
+
+.add__player .contents h1{
+    font-size: 72px;
+}
+
+.add__player .contents .inputs{
+    display: flex;
+    position: relative;
+}
+.add__player .contents .inputs input{
+    width: 100%;
+    height: 60px;
+    padding: 5px 50px;
+    font-size: 30px;
+    outline: none;
+}
+
+.add__player .contents .inputs img{
+    position: absolute;
+    right: 0;
+    transform: scale(.7);
+    cursor: pointer;
+}
+
+.add__player .btns button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.add__player .btns button:first-child{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.add__player .btns button:last-child{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+
 }
