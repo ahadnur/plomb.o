@@ -68,3 +68,22 @@ body{
     padding: 5px 15px;
     cursor: pointer;
 }
+
+.init__warning .btns{
+    position: absolute;
+    left: 60px;
+    bottom: 50px;
+    z-index: -1;
+}
+
+.init__warning .btns button{
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.init__warning .btns button:not(:last-child){
+    margin-right: 50px;
+}
