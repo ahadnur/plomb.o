@@ -17,8 +17,23 @@ body{
     max-height: 100vh;
     max-width: 100%;
     background-color: #79FFFE;
+    overflow: hidden;
 }
 
+section .contents{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+section .contents button{
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 150px;
+}
 .active{
     display: block;
 }
@@ -31,9 +46,6 @@ body{
     position: relative;
 }
 
-.init__warning .contents{
-    margin-top: 50px;
-}
 .init__warning .warning{
     position: absolute;
     height: 100%;
@@ -76,7 +88,7 @@ body{
     z-index: -1;
 }
 
-.init__warning .btns button{
+section .btns button{
     background: none;
     border: none;
     outline: none;
@@ -84,6 +96,28 @@ body{
     padding: 0;
     cursor: pointer;
 }
-.init__warning .btns button:not(:last-child){
+section .btns button:not(:last-child){
     margin-right: 50px;
+}
+
+.homepage{
+    max-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.homepage .contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage .contents .main__img{
+    width: 780px;
+}
+
+.homepage .btns{
+    position: absolute;
+    left: 60px;
+    top: 80vh;
 }
