@@ -13,6 +13,41 @@ let addPlayerBtn = document.getElementById('add__player');
 let addPlayerPrevBtn = document.getElementById('homePage');
 let addPlayerNextBtn = document.getElementById('addNewPlayer');
 
+// grabing the show field the names
+let nameList = document.querySelector('.name__list');
+
+
+// list for player name
+var player_names = []
+
+// input field
+var player_name = document.getElementById('input_player_name');
+var addBtn = document.getElementById('input_btn');
+
+// Event Listener
+addBtn.addEventListener('click', addName);
+
+// Functions
+function addName(event){
+    event.preventDefault();
+    const nameDiv = document.createElement('div');
+    nameDiv.classList.add('name');
+    nameList.appendChild(nameDiv);
+    // creating new li
+    const newName = document.createElement('li');
+    newName.classList.add('single__name');
+    nameDiv.appendChild(newName);
+    // for the name
+    const singleName = document.createElement('p');
+    const delBtn = document.createElement('button');
+    delBtn.classList.add('del__btn');
+    delBtn.innerHTML = '<img src="./img/minus 1.png" alt="minus">'
+    newName.appendChild(singleName);
+    newName.appendChild(delBtn)
+
+    singleName.innerText = player_name.value;
+}
+
 confirm_btn.addEventListener('click', () => {
     warningPage.style.display = 'none';
     homepage.style.display = 'block';
