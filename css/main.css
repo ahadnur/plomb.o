@@ -153,6 +153,11 @@ section .contents button{
     text-align: center;
 }
 
+.add__player .contents .names{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
 .add__player .contents h1{
     font-size: 72px;
 }
